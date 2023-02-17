@@ -1,8 +1,9 @@
 import { BUY_CAKE } from "./cakeConsts";
 
-const buyCake=()=>{
+const buyCake=(number=1)=>{
     return {
-        type:BUY_CAKE
+        type:BUY_CAKE,
+        payload:number
     }
 }
 export default buyCake
